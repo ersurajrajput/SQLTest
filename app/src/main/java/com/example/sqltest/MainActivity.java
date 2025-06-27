@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         lv_allUser.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+//test
                 DBHelper dbHelper = new DBHelper(MainActivity.this);
                 CustomerModel customerModel = (CustomerModel) parent.getItemAtPosition(position);
                 dbHelper.deleteOne(customerModel);
